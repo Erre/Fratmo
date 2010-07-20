@@ -1,0 +1,17 @@
+Un bel giorno non avevo un cazzo da fare e dissi "Cazzo, ora scrivo un bel bot per irc".
+Lo scrissi, ma faceva solo due cazzatine e già aveva 130 righe di codice.
+Così nella mia malata/scema/drogata mente dissi: "Perchè non scriverlo a plugin?"
+E da lì Fratmo prese vita. La comodità è che chiunque abbia nella sua merda di testolina
+qualche idea per aggiungere una funzione al bot, può farlo senza modificare il codice del
+sorgente stesso, ma scrivendo un semplice plugin.
+
+Scrivere un plugin è semplice: ogni plugin deve avere due funzioni, control() e main().
+La prima consiste nel controllare se il plugin dovrà essere eseguito, la seconda
+contiene il corpo del plugin.
+
+Come fa a controllare se il plugin deve essere eseguito? Semplice, faccio un controllo
+sui dati ricevuti dal server e, se trovo la stringa che ritorna la funzione control()
+di un plugin, vado ad eseguire il main dello stesso.
+
+Ultima cosa: il main prende come argomento una lista, che contiene 3 elementi: il
+socket su cui operare, il channel nel quale è loggato il bot e la stringa ricevuta dal server.

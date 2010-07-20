@@ -1,0 +1,10 @@
+Versione 0.3:
+- Caricamento manuale dei moduli
+- Piccola ottimizzazione
+- Piccolo bug fixato
+
+Versione 0.4:
+- Decaricamento manuale dei plugin
+- Possibilità di caricare/decaricare plugin manualmente anche se settato l'autoload
+- Piccolo bug fixing 
+
